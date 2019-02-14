@@ -29,12 +29,12 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '3.6.0'
-end
+  end
 
 group :test do
   gem 'database_cleaner', '1.5.3'
   gem 'shoulda-matchers', '3.1.1'
-  gem 'factory_girl_rails', '4.8.0'
+  gem 'factory_bot_rails','5.0.1'
   gem 'faker', '1.7.3'
 end
 
@@ -45,7 +45,11 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
   gem 'spring-commands-rspec', '1.0.4'
   # Use mysql as the database for Active Record
-  gem 'mysql2', '0.4.5'
+ #gem 'mysql2', '0.3.18'
+ #gem 'rails', '~> 4.2.4', git: "git://github.com/rails/rails.git", branch: '4-2-stable'
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw] #-> Rails 4.1+
+gem 'mysql2','0.2.7'
+ gem 'activerecord-mysql2-adapter', '~> 0.0.3'
 end
 
 
