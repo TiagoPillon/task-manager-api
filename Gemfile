@@ -45,7 +45,11 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
   gem 'spring-commands-rspec', '1.0.4'
   # Use mysql as the database for Active Record
-  gem 'mysql2', '0.4.5'
+   gem "mysql2", "~> 0.3.11"
+  #gem 'mysql2', '0.3.16'
+   #gem 'mysql2', '~> 0.3.18'
+   #gem 'mysql', '~> 2.9', '>= 2.9.1'
+  # gem 'mysql2', '~> 0.4.4'
 end
 
 
