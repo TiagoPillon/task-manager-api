@@ -18,7 +18,7 @@ class Api::V1::UsersController < Api::V1::BaseController
     if user.save
       render json: user, status: 201
     else
-    
+
       render json: { errors: user.errors }, status: 422
     end
   end
@@ -34,7 +34,7 @@ class Api::V1::UsersController < Api::V1::BaseController
   end
 
   def destroy
-    current_user.destroy
+    user = current_user.destroy
     head 204
   end
 
