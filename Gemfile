@@ -37,7 +37,8 @@ group :test do
   gem 'database_cleaner', '1.5.3'
   gem 'shoulda-matchers', '3.1.1'
   #gem 'factory_girl_rails' 
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '5.0.1'
+
    gem 'faker', '1.7.3'
 end
 
