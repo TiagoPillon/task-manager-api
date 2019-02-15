@@ -28,12 +28,13 @@ gem 'rack-cors', '1.0.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rspec-rails', '3.6.0'
+  
   #gem 'factory_bot_rails','5.0.1'
 
   end
 
 group :test do
+  gem 'rspec-rails', '3.6.0'
   gem 'database_cleaner', '1.5.3'
   gem 'shoulda-matchers', '3.1.1'
   #gem 'factory_girl_rails' 
@@ -51,6 +52,7 @@ group :development do
   # Use mysql as the database for Active Record
   gem 'mysql2', '~> 0.4.10'
   #gem 'mysql2', '~> 0.5.2'
+  gem 'rake', '~> 0.8.7'
 end
 
 
