@@ -52,7 +52,7 @@ group :development do
   # Use mysql as the database for Active Record
   gem 'mysql2', '~> 0.4.10'
   #gem 'mysql2', '~> 0.5.2'
-  gem 'rake', '~> 0.8.7'
+  gem 'rake', '12.3.2'
 end
 
 
@@ -62,6 +62,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '4.3.0'
 
 gem 'active_model_serializers', '0.10.6'
+
+gem 'activerecord'
 
 gem 'ransack', '1.8.2'
 
