@@ -12,49 +12,7 @@ end
 gem 'rails', '5.0.7'
 # Use Puma as the app server
 gem 'puma', '3.10.0'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors', '1.0.1'
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-  
-  #gem 'factory_bot_rails','5.0.1'
-
-  end
-
-group :test do
-  gem 'rspec-rails', '3.6.0'
-  gem 'database_cleaner', '1.5.3'
-  gem 'shoulda-matchers', '3.1.1'
-  #gem 'factory_girl_rails' 
-  gem 'factory_bot_rails', '5.0.1'
-
-   gem 'faker', '1.7.3'
-end
-
-group :development do
-  gem 'listen', '3.0.8'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring', '2.0.1'
-  gem 'spring-watcher-listen', '2.0.1'
-  gem 'spring-commands-rspec', '1.0.4'
-  # Use mysql as the database for Active Record
-  gem 'mysql2', '~> 0.4.10'
-  #gem 'mysql2', '~> 0.5.2'
-  gem 'rake', '12.3.2'
-end
-
+gem 'mysql2', '~> 0.5.2'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -63,8 +21,6 @@ gem 'devise', '4.3.0'
 
 gem 'active_model_serializers', '0.10.6'
 
-gem 'activerecord'
-
 gem 'ransack', '1.8.2'
 
 gem 'omniauth', '1.6.1'
@@ -72,3 +28,26 @@ gem 'omniauth', '1.6.1'
 gem 'devise_token_auth', '0.1.42'
 
 gem 'rails-i18n', '5.0.4'
+gem 'listen', '3.0.8'
+
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'rack-cors', '1.0.1'
+
+group :development, :test do
+  gem 'byebug', platform: :mri
+  gem 'rspec-rails', '3.6.0'  
+end
+
+group :test do
+  gem 'shoulda-matchers', '3.1.1'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
+  gem 'faker', git: 'https://github.com/stympy/faker.git', branch: 'master'  
+end
+
+group :development do
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring', '2.0.1'
+  gem 'spring-watcher-listen', '2.0.1'
+  gem 'spring-commands-rspec', '1.0.4'
+end
