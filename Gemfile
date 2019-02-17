@@ -51,6 +51,7 @@ group :development do
   # Use mysql as the database for Active Record
    gem "mysql2", "~> 0.3.11"
    gem 'rspec', '~> 3.4'
+   
   #gem 'mysql2', '0.3.16'
    #gem 'mysql2', '~> 0.3.18'
    #gem 'mysql', '~> 2.9', '>= 2.9.1'

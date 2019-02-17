@@ -6,9 +6,9 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 require 'database_cleaner'
-require 'factory_bot'
+require 'factory_bot_rails'
 require 'faker'
-require 'support/factory_bot'
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
