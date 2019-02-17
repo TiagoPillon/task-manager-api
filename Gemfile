@@ -29,13 +29,17 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '3.6.0'
+  # gem 'faker', '~> 1.6', '>= 1.6.6'
+  
 end
 
 group :test do
   gem 'database_cleaner', '1.5.3'
   gem 'shoulda-matchers', '3.1.1'
-  gem 'factory_girl_rails', '4.8.0'
-  gem 'faker', '1.7.3'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'  
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
+  gem 'test-unit', '~> 3.1', '>= 3.1.8'
+  gem 'minitest', '~> 5.8', '>= 5.8.4'
 end
 
 group :development do
@@ -46,6 +50,7 @@ group :development do
   gem 'spring-commands-rspec', '1.0.4'
   # Use mysql as the database for Active Record
    gem "mysql2", "~> 0.3.11"
+   gem 'rspec', '~> 3.4'
   #gem 'mysql2', '0.3.16'
    #gem 'mysql2', '~> 0.3.18'
    #gem 'mysql', '~> 2.9', '>= 2.9.1'
